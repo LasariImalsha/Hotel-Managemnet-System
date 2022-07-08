@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomDetailFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1927.0" layoutY="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/swan_towel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tab_3.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="23.0" layoutY="62.0" onAction="#addGuestOnAction" prefHeight="76.0" prefWidth="280.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Add New Guest">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="333.0" layoutY="62.0" onAction="#packageOnAction" prefHeight="76.0" prefWidth="280.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Packages">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="641.0" layoutY="62.0" onAction="#roomOnAction" prefHeight="76.0" prefWidth="280.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Rooms">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="947.0" layoutY="62.0" onAction="#mealOnAction" prefHeight="76.0" prefWidth="280.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Meal Plans">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1254.0" layoutY="62.0" onAction="#searchOnAction" prefHeight="76.0" prefWidth="280.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Search Details">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1702.0" layoutY="64.0" onAction="#logoutOnAction" prefHeight="67.0" prefWidth="174.0" style="-fx-background-color: Black; -fx-background-radius: 20px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="141.0" layoutY="269.0" text="Room Details" textFill="#690505">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <Separator layoutX="481.0" layoutY="308.0" prefHeight="0.0" prefWidth="1091.0" style="-fx-border-color: #690505;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="143.0" layoutX="140.0" layoutY="358.0" opacity="0.71" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="905.0" />
+      <Label layoutX="227.0" layoutY="407.0" text="Search ID  :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <TextField layoutX="426.0" layoutY="415.0" prefHeight="46.0" prefWidth="250.0" style="-fx-background-color: #d3caca;" />
+      <JFXButton buttonType="RAISED" layoutX="758.0" layoutY="415.0" prefHeight="46.0" prefWidth="189.0" style="-fx-background-color: #d3caca;" text="Search" textFill="#690505">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="749.0" layoutY="589.0" prefHeight="415.0" prefWidth="934.0" style="-fx-background-color: #e8ddb7;">
+        <columns>
+          <TableColumn prefWidth="309.0" text="Available Rooms" />
+          <TableColumn minWidth="0.0" prefWidth="327.0" text="Rooms In Maintance" />
+            <TableColumn minWidth="0.0" prefWidth="327.0" text="Booked Rooms" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="134.0" fitWidth="150.0" layoutX="23.0" layoutY="931.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Blue_Ocean_Logo(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1804.0" layoutY="1044.0" text="Version1.0.0" textFill="#d05454" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditRoomFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/swan_towel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tab8.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="106.0" layoutY="62.0" onAction="#roomOnAction" prefHeight="75.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Rooms">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="489.0" layoutY="62.0" onAction="#mealPlanOnAction" prefHeight="75.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Meal Plans">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="839.0" layoutY="62.0" onAction="#packageOnAction" prefHeight="75.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Packages">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1221.0" layoutY="62.0" onAction="#incomeReportOnAction" prefHeight="75.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Income Reports">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1687.0" layoutY="62.0" onAction="#logoutOnAction" prefHeight="62.0" prefWidth="170.0" style="-fx-background-color: Black; -fx-background-radius: 20px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="162.0" layoutY="256.0" text="Edit Room" textFill="#d7b84b">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <Separator layoutX="439.0" layoutY="299.0" prefHeight="0.0" prefWidth="842.0" style="-fx-background-color: #d7b84b; -fx-border-color: #d7b84b;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="396.0" layoutX="343.0" layoutY="342.0" opacity="0.63" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="385.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="396.0" layoutX="768.0" layoutY="342.0" opacity="0.63" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="385.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="396.0" layoutX="1189.0" layoutY="342.0" opacity="0.63" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="385.0" />
+      <Label layoutX="445.0" layoutY="387.0" text="Add New Room" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="461.0" text="Room ID       :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="518.0" text="Room Type   :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="399.0" layoutY="573.0" text="Room View   :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="881.0" layoutY="387.0" text="Modify Room" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="1305.0" layoutY="387.0" text="Delete Room" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="826.0" layoutY="461.0" text="Room ID       :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="518.0" text="Room Type   :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="573.0" text="Room View   :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="555.0" layoutY="461.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField layoutX="978.0" layoutY="461.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField layoutX="555.0" layoutY="518.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField layoutX="555.0" layoutY="573.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField layoutX="978.0" layoutY="573.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField layoutX="978.0" layoutY="518.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <JFXButton layoutX="555.0" layoutY="645.0" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #aaa69d;" text="Add">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="978.0" layoutY="645.0" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #aaa69d;" text="Modify">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="1242.0" layoutY="461.0" text="Room ID       :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1397.0" layoutY="461.0" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #c4c4c4;" />
+      <JFXButton layoutX="1397.0" layoutY="645.0" prefHeight="44.0" prefWidth="119.0" style="-fx-background-color: #aaa69d;" text="Delete">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="770.0" layoutY="780.0" prefHeight="248.0" prefWidth="807.0" style="-fx-background-color: #e8ddb7;">
+        <columns>
+          <TableColumn prefWidth="256.0" text="Room ID" />
+          <TableColumn prefWidth="262.0" text="Room Type" />
+            <TableColumn prefWidth="288.0" text="Room View" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="126.0" fitWidth="145.0" layoutX="14.0" layoutY="940.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Blue_Ocean_Logo(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1806.0" layoutY="1045.0" text="Version1.0.0" textFill="#d05454" />
+   </children>
+</AnchorPane>

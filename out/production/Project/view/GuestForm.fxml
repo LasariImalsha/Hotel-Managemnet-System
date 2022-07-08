@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: E8DDB7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GuestFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" layoutY="14.0" pickOnBounds="true" style="-fx-blend-mode: #791111;">
+         <image>
+            <Image url="@../assets/df.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="1920.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tab6.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="21.0" layoutY="50.0" onAction="#addGuestOnAction" prefHeight="86.0" prefWidth="283.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Add New Guest">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="329.0" layoutY="53.0" onAction="#packageOnAction" prefHeight="78.0" prefWidth="283.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Packages">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="644.0" layoutY="55.0" onAction="#roomsOnAction" prefHeight="78.0" prefWidth="276.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Rooms">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="941.0" layoutY="53.0" onAction="#mealOnAction" prefHeight="78.0" prefWidth="283.0" style="-fx-background-radius: 20px; -fx-background-color: White;" text="Meal Plans">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1255.0" layoutY="54.0" onAction="#searchOnAction" prefHeight="78.0" prefWidth="276.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Search Details">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1702.0" layoutY="62.0" onAction="#logoutOnAction" prefHeight="62.0" prefWidth="171.0" style="-fx-background-color: Black; -fx-background-radius: 20px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="97.0" layoutY="228.0" text="Add New guest" textFill="#791111">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <Separator layoutX="471.0" layoutY="280.0" prefHeight="0.0" prefWidth="1211.0" style="-fx-background-color: #791111;" />
+      <JFXTextField fx:id="txtFName" focusColor="BLACK" labelFloat="true" layoutX="97.0" layoutY="320.0" prefHeight="55.0" prefWidth="276.0" promptText="First Name" unFocusColor="BLACK">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCountry" focusColor="BLACK" labelFloat="true" layoutX="471.0" layoutY="320.0" prefHeight="55.0" prefWidth="276.0" promptText="Country">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtLName" focusColor="BLACK" labelFloat="true" layoutX="97.0" layoutY="424.0" prefHeight="55.0" prefWidth="276.0" promptText="Last Name">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtGender" focusColor="BLACK" labelFloat="true" layoutX="471.0" layoutY="424.0" prefHeight="55.0" prefWidth="276.0" promptText="Gender">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNIC" focusColor="BLACK" labelFloat="true" layoutX="97.0" layoutY="527.0" prefHeight="55.0" prefWidth="276.0" promptText="NIC/Passport">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNum" focusColor="BLACK" labelFloat="true" layoutX="474.0" layoutY="527.0" prefHeight="55.0" prefWidth="276.0" promptText="Contact Numbers">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="BLACK" labelFloat="true" layoutX="97.0" layoutY="621.0" prefHeight="55.0" prefWidth="276.0" promptText="Address">
+         <font>
+            <Font name="Californian FB Bold" size="27.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMail" focusColor="BLACK" labelFloat="true" layoutX="474.0" layoutY="629.0" prefHeight="55.0" prefWidth="283.0" promptText="Email">
+         <font>
+            <Font name="Californian FB Bold" size="28.0" />
+         </font>
+      </JFXTextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="390.0" layoutX="876.0" layoutY="319.0" opacity="0.5" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="503.0" />
+      <Label layoutX="960.0" layoutY="354.0" text="Check In" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="408.0" text="Check Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="452.0" text="No Of Adults" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="498.0" text="No of Children" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="547.0" text="Beds" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="589.0" text="Meals" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="959.0" layoutY="633.0" text="Room No" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCheckIn" layoutX="1162.0" layoutY="348.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtCheckOut" layoutX="1162.0" layoutY="401.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtNoOfAdults" layoutX="1162.0" layoutY="453.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtNoOfChild" layoutX="1162.0" layoutY="499.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtBed" layoutX="1162.0" layoutY="548.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtMeal" layoutX="1162.0" layoutY="590.0" style="-fx-background-color: E3D7C9;" />
+      <TextField fx:id="txtRoomNo" layoutX="1162.0" layoutY="633.0" style="-fx-background-color: E3D7C9;" />
+      <TableView fx:id="tblGuestDetails" layoutX="167.0" layoutY="735.0" prefHeight="315.0" prefWidth="1604.0" style="-fx-background-color: E3D7C9;">
+        <columns>
+          <TableColumn fx:id="colFName" prefWidth="75.0" text="FName" />
+          <TableColumn fx:id="colLName" prefWidth="75.0" text="LName" />
+            <TableColumn fx:id="colNIC" prefWidth="75.0" text="NIC" />
+            <TableColumn fx:id="colAddress" prefWidth="75.0" text="Adress" />
+            <TableColumn fx:id="colCountry" prefWidth="75.0" text="Country" />
+            <TableColumn fx:id="colGender" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="colTP" prefWidth="75.0" text="CntNum" />
+            <TableColumn fx:id="colMail" prefWidth="128.0" text="Email" />
+            <TableColumn fx:id="colCheckIn" prefWidth="69.0" text="Check In" />
+            <TableColumn fx:id="colCheckOut" prefWidth="131.0" text="CheckOut" />
+            <TableColumn fx:id="colAdult" prefWidth="85.0" text="NoOfAdlt" />
+            <TableColumn fx:id="colChild" prefWidth="137.0" text="NoOfChld" />
+            <TableColumn fx:id="colBed" prefWidth="133.0" text="Beds" />
+            <TableColumn fx:id="colMeal" prefWidth="139.0" text="Meals" />
+            <TableColumn fx:id="colRoom" prefWidth="118.0" text="RoomNo" />
+            <TableColumn fx:id="colEdit" prefWidth="138.0" text="Edit" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="916.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="828.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="54.0" layoutY="836.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="126.0" fitWidth="134.0" layoutX="14.0" layoutY="954.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Blue_Ocean_Logo(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1809.0" layoutY="1056.0" text="Version1.0.0" textFill="#d05454" />
+      <JFXButton layoutX="1515.0" layoutY="364.0" onAction="#saveOnAction" prefHeight="53.0" prefWidth="187.0" style="-fx-background-color: #3d3003; -fx-background-radius: 20px;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1515.0" layoutY="468.0" prefHeight="53.0" prefWidth="187.0" style="-fx-background-color: #3d3003; -fx-background-radius: 20px;" text="Send Email" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1515.0" layoutY="579.0" prefHeight="53.0" prefWidth="187.0" style="-fx-background-color: #3d3003; -fx-background-radius: 20px;" text="Print Token" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

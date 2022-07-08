@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportsFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/hg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tb9.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="78.0" layoutY="62.0" onAction="#roomOnAction" prefHeight="75.0" prefWidth="277.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Rooms">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="460.0" layoutY="62.0" onAction="#mealPlansOnAction" prefHeight="75.0" prefWidth="277.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Meal Plans">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="832.0" layoutY="62.0" onAction="#packagesOnAction" prefHeight="75.0" prefWidth="277.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Packages">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1191.0" layoutY="56.0" onAction="#incomeReportsOnAction" prefHeight="82.0" prefWidth="288.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Income Reports">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1674.0" layoutY="69.0" onAction="#logoutOnAction" prefHeight="62.0" prefWidth="172.0" style="-fx-background-color: Black; -fx-background-radius: 20px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="133.0" layoutY="275.0" text="InCome Reports" textFill="#d7b84b">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <Separator layoutX="587.0" layoutY="315.0" prefHeight="0.0" prefWidth="970.0" style="-fx-background-color: #d7b84b;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="535.0" layoutX="448.0" layoutY="390.0" opacity="0.55" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="482.0" />
+      <Label layoutX="552.0" layoutY="436.0" text="Monthly Reports" textFill="#24309b">
+         <font>
+            <Font name="Californian FB Bold" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="215.0" fitWidth="329.0" layoutX="531.0" layoutY="586.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/chart.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="504.0" layoutY="517.0" text=" Month   :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField layoutX="634.0" layoutY="525.0" prefHeight="31.0" prefWidth="123.0" />
+      <JFXButton layoutX="764.0" layoutY="525.0" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #c7c2a9;" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="763.0" layoutY="841.0" style="-fx-background-color: #f4e2a2; -fx-background-radius: 20px;" text="Print Report">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="535.0" layoutX="972.0" layoutY="392.0" opacity="0.55" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="482.0" />
+      <Label layoutX="1095.0" layoutY="436.0" text="Annual Reports" textFill="#24309b">
+         <font>
+            <Font name="Californian FB Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="1025.0" layoutY="521.0" text=" Year   :">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1139.0" layoutY="525.0" prefHeight="31.0" prefWidth="123.0" />
+      <JFXButton layoutX="1272.0" layoutY="525.0" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #c7c2a9;" text="Search">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1271.0" layoutY="841.0" style="-fx-background-color: #f4e2a2; -fx-background-radius: 20px;" text="Print Report">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="215.0" fitWidth="336.0" layoutX="1045.0" layoutY="586.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/chart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="137.0" layoutX="27.0" layoutY="940.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Blue_Ocean_Logo(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1806.0" layoutY="1037.0" text="Version1.0.0" textFill="#d05454" />
+   </children>
+</AnchorPane>

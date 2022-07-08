@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchFormController">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/sep12.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="186.0" fitWidth="1920.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/tab_5.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="62.0" onAction="#addGuestOnAction" prefHeight="76.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Add New Guest">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="333.0" layoutY="62.0" onAction="#packageOnAction" prefHeight="76.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Packages">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="640.0" layoutY="62.0" onAction="#roomOnAction" prefHeight="76.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Rooms">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="950.0" layoutY="62.0" onAction="#mealOnAction" prefHeight="76.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Meal Plans">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="1258.0" layoutY="62.0" onAction="#searchDetailOnAction" prefHeight="76.0" prefWidth="281.0" style="-fx-background-color: White; -fx-background-radius: 20px;" text="Search Details">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="1712.0" layoutY="76.0" onAction="#logoutOnAction" prefHeight="62.0" prefWidth="170.0" style="-fx-background-color: Black; -fx-background-radius: 20px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font></JFXButton>
+      <Label layoutX="157.0" layoutY="278.0" text="Search Details" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="55.0" />
+         </font>
+      </Label>
+      <Separator layoutX="533.0" layoutY="319.0" prefHeight="14.0" prefWidth="1053.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7096b0" height="308.0" layoutX="440.0" layoutY="378.0" opacity="0.65" stroke="#7096b0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="510.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7096b0" height="308.0" layoutX="976.0" layoutY="378.0" opacity="0.65" stroke="#7096b0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="510.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7096b0" height="308.0" layoutX="705.0" layoutY="714.0" opacity="0.65" stroke="#7096b0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="510.0" />
+      <Label layoutX="601.0" layoutY="412.0" text="Search Guest" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1139.0" layoutY="412.0" text="Search Room" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="868.0" layoutY="749.0" text="Search Meal" textFill="WHITE">
+         <font>
+            <Font name="Californian FB Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="519.0" layoutY="485.0" text="NIC/Passport   :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="781.0" layoutY="819.0" text="Meal ID      :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="1067.0" layoutY="485.0" text="Room ID      :" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNic" layoutX="681.0" layoutY="485.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField fx:id="txtMeal" layoutX="948.0" layoutY="819.0" style="-fx-background-color: #c4c4c4;" />
+      <TextField fx:id="txtRoom" layoutX="1225.0" layoutY="485.0" style="-fx-background-color: #c4c4c4;" />
+      <JFXButton layoutX="681.0" layoutY="540.0" onAction="#searchOnAction" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="948.0" layoutY="868.0" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1225.0" layoutY="540.0" onAction="#search2OnAction" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="Search">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1225.0" layoutY="597.0" onAction="#view2OnAction" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="View All Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="681.0" layoutY="597.0" onAction="#view1OnAction" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="View All Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="948.0" layoutY="928.0" prefHeight="39.0" prefWidth="187.0" style="-fx-background-color: #d1d8e0;" text="View All Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="138.0" fitWidth="160.0" layoutX="32.0" layoutY="928.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Blue_Ocean_Logo(2).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1797.0" layoutY="1033.0" text="Version1.0.0" textFill="#d05454" />
+   </children>
+</AnchorPane>
